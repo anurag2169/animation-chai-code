@@ -39,7 +39,7 @@ export default function Home() {
 
 function ActionButton({ icon, text, color, link = "#" }: any) {
   return (
-    <Link href={link} >
+    <Link href={link} target="_blank">
       <button
         className={`${color} text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 flex items-center justify-center space-x-2`}
       >
