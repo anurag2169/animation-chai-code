@@ -37,7 +37,12 @@ export default function Home() {
   );
 }
 
-function ActionButton({ icon, text, color, link = "#" }: any) {
+function ActionButton({ icon, text, color, link = "#" }: {
+  icon: React.ReactNode;
+  text: string;
+  color: string;
+  link?: string;
+}) {
   return (
     <Link href={link} target="_blank">
       <button
